@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HzFjbrmblbc=",
+  "dgSpecHash": "yC66RAPaEdo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jefmarti\\source\\repos\\net-blazor-azure-sql-db-vector-search\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search.csproj",
+  "projectFilePath": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
