@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\blazor-azure-sql-vector-search.props" />
+</Project>
