@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("blazor-azure-sql-vector-search")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bb71c7dff5fa19461383e75a05c5f3488ddc386")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d9ac954280c5918e84ea4d8441120bbe1027dbb")]
 [assembly: System.Reflection.AssemblyProductAttribute("blazor-azure-sql-vector-search")]
 [assembly: System.Reflection.AssemblyTitleAttribute("blazor-azure-sql-vector-search")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
