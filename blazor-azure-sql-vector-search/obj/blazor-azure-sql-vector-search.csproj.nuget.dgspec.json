@@ -49,6 +49,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.SemanticKernel": {
+              "target": "Package",
+              "version": "[1.38.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

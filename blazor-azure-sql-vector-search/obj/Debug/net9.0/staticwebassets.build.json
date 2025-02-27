@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TjFX/tvdg4oguueuJsLGLHEIv5S9+4lqoqtVr6sh9O4=",
+  "Hash": "H/e/lHyxcPbx0ALoibHmSobXjN7e6IQABsbry9MJPWc=",
   "Source": "blazor-azure-sql-vector-search",
   "BasePath": "_content/blazor-azure-sql-vector-search",
   "Mode": "Default",
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\Debug\\net9.0\\compressed\\7ncoclh614-khy4lop6wu.gz",
+      "Identity": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\Debug\\net9.0\\compressed\\7ncoclh614-gukrmps5cy.gz",
       "SourceId": "blazor-azure-sql-vector-search",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/blazor-azure-sql-vector-search",
-      "RelativePath": "app#[.{fingerprint=khy4lop6wu}]?.css.gz",
+      "RelativePath": "app#[.{fingerprint=gukrmps5cy}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -178,8 +178,8 @@
       "RelatedAsset": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\wwwroot\\app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "shxmjhlez9",
-      "Integrity": "8AW5z0bh7/mw0xH4LdDSG9tn9KuE8navaRG23Xkbe7o=",
+      "Fingerprint": "3u2jsq6z4a",
+      "Integrity": "G/nI9+yGRStbjsbb0HWfHcOkrLTolQmey39MdgqVT+0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\wwwroot\\app.css"
@@ -1060,8 +1060,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "khy4lop6wu",
-      "Integrity": "aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=",
+      "Fingerprint": "gukrmps5cy",
+      "Integrity": "SHzSEayWL619b+64AIz9o9sJc7WxDYvhkvjuZ05qmIM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
@@ -2015,12 +2015,12 @@
   "Endpoints": [
     {
       "Route": "app.css",
-      "AssetFile": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\Debug\\net9.0\\compressed\\7ncoclh614-khy4lop6wu.gz",
+      "AssetFile": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\Debug\\net9.0\\compressed\\7ncoclh614-gukrmps5cy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000653167864"
+          "Quality": "0.000640204866"
         }
       ],
       "ResponseHeaders": [
@@ -2030,15 +2030,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1530"
+          "Value": "1561"
         },
         {
           "Name": "ETag",
-          "Value": "\"8AW5z0bh7/mw0xH4LdDSG9tn9KuE8navaRG23Xkbe7o=\""
+          "Value": "\"G/nI9+yGRStbjsbb0HWfHcOkrLTolQmey39MdgqVT+0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 04:23:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2058,13 +2058,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
+          "Value": "W/\"SHzSEayWL619b+64AIz9o9sJc7WxDYvhkvjuZ05qmIM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
+          "Value": "sha256-SHzSEayWL619b+64AIz9o9sJc7WxDYvhkvjuZ05qmIM="
         }
       ]
     },
@@ -2079,7 +2079,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2900"
+          "Value": "2964"
         },
         {
           "Name": "Content-Type",
@@ -2087,11 +2087,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
+          "Value": "\"SHzSEayWL619b+64AIz9o9sJc7WxDYvhkvjuZ05qmIM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 04:23:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2101,13 +2101,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
+          "Value": "sha256-SHzSEayWL619b+64AIz9o9sJc7WxDYvhkvjuZ05qmIM="
         }
       ]
     },
     {
       "Route": "app.css.gz",
-      "AssetFile": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\Debug\\net9.0\\compressed\\7ncoclh614-khy4lop6wu.gz",
+      "AssetFile": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\Debug\\net9.0\\compressed\\7ncoclh614-gukrmps5cy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2116,7 +2116,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1530"
+          "Value": "1561"
         },
         {
           "Name": "Content-Type",
@@ -2124,11 +2124,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8AW5z0bh7/mw0xH4LdDSG9tn9KuE8navaRG23Xkbe7o=\""
+          "Value": "\"G/nI9+yGRStbjsbb0HWfHcOkrLTolQmey39MdgqVT+0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 04:23:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2146,18 +2146,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8AW5z0bh7/mw0xH4LdDSG9tn9KuE8navaRG23Xkbe7o="
+          "Value": "sha256-G/nI9+yGRStbjsbb0HWfHcOkrLTolQmey39MdgqVT+0="
         }
       ]
     },
     {
-      "Route": "app.khy4lop6wu.css",
-      "AssetFile": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\Debug\\net9.0\\compressed\\7ncoclh614-khy4lop6wu.gz",
+      "Route": "app.gukrmps5cy.css",
+      "AssetFile": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\Debug\\net9.0\\compressed\\7ncoclh614-gukrmps5cy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000653167864"
+          "Quality": "0.000640204866"
         }
       ],
       "ResponseHeaders": [
@@ -2167,15 +2167,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1530"
+          "Value": "1561"
         },
         {
           "Name": "ETag",
-          "Value": "\"8AW5z0bh7/mw0xH4LdDSG9tn9KuE8navaRG23Xkbe7o=\""
+          "Value": "\"G/nI9+yGRStbjsbb0HWfHcOkrLTolQmey39MdgqVT+0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 04:23:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2195,13 +2195,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
+          "Value": "W/\"SHzSEayWL619b+64AIz9o9sJc7WxDYvhkvjuZ05qmIM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "khy4lop6wu"
+          "Value": "gukrmps5cy"
         },
         {
           "Name": "label",
@@ -2209,12 +2209,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
+          "Value": "sha256-SHzSEayWL619b+64AIz9o9sJc7WxDYvhkvjuZ05qmIM="
         }
       ]
     },
     {
-      "Route": "app.khy4lop6wu.css",
+      "Route": "app.gukrmps5cy.css",
       "AssetFile": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2224,7 +2224,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2900"
+          "Value": "2964"
         },
         {
           "Name": "Content-Type",
@@ -2232,11 +2232,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\""
+          "Value": "\"SHzSEayWL619b+64AIz9o9sJc7WxDYvhkvjuZ05qmIM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 04:23:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2246,7 +2246,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "khy4lop6wu"
+          "Value": "gukrmps5cy"
         },
         {
           "Name": "label",
@@ -2254,13 +2254,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="
+          "Value": "sha256-SHzSEayWL619b+64AIz9o9sJc7WxDYvhkvjuZ05qmIM="
         }
       ]
     },
     {
-      "Route": "app.khy4lop6wu.css.gz",
-      "AssetFile": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\Debug\\net9.0\\compressed\\7ncoclh614-khy4lop6wu.gz",
+      "Route": "app.gukrmps5cy.css.gz",
+      "AssetFile": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\Debug\\net9.0\\compressed\\7ncoclh614-gukrmps5cy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2269,7 +2269,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1530"
+          "Value": "1561"
         },
         {
           "Name": "Content-Type",
@@ -2277,11 +2277,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8AW5z0bh7/mw0xH4LdDSG9tn9KuE8navaRG23Xkbe7o=\""
+          "Value": "\"G/nI9+yGRStbjsbb0HWfHcOkrLTolQmey39MdgqVT+0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 04:23:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2299,7 +2299,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "khy4lop6wu"
+          "Value": "gukrmps5cy"
         },
         {
           "Name": "label",
@@ -2307,7 +2307,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8AW5z0bh7/mw0xH4LdDSG9tn9KuE8navaRG23Xkbe7o="
+          "Value": "sha256-G/nI9+yGRStbjsbb0HWfHcOkrLTolQmey39MdgqVT+0="
         }
       ]
     },
@@ -2336,7 +2336,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2389,7 +2389,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2426,7 +2426,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2473,7 +2473,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2534,7 +2534,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2579,7 +2579,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2634,7 +2634,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2695,7 +2695,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2740,7 +2740,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2795,7 +2795,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2848,7 +2848,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2885,7 +2885,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 00:51:26 GMT"
+          "Value": "Tue, 25 Feb 2025 01:06:41 GMT"
         },
         {
           "Name": "Cache-Control",
