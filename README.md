@@ -85,4 +85,4 @@ In the `Chat.razor` file, update the following value to be used in the stored pr
 Once the values are saved, run the application using F5 and navigate to the Chat blade. You can then ask a question in the input field to start the chat and receive a response from your Azure OpenAI service grounded in your Azure SQL data.
 
 ### 4. Deploy to App Service
-You can deploy the web app as you normally would. Although your secrets in app settings are encrypted at REST, we highly recommend setting up managed identity to secure your resources. Please see the documentation for this sample to secure your resources with [managed identity](https://learn.microsoft.com/azure/app-service/deploy-intelligent-apps-dotnet-to-azure-sql#secure-your-data-with-managed-identity)
+You can deploy the web app as you normally would. Although your secrets in app settings are encrypted at rest, we highly recommend setting up managed identity to secure your resources. Please see the documentation for this sample to secure your resources with [managed identity](https://learn.microsoft.com/azure/app-service/deploy-intelligent-apps-dotnet-to-azure-sql#secure-your-data-with-managed-identity)
