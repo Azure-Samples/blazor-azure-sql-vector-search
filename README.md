@@ -51,7 +51,7 @@ In the `Chat.razor` file, update the following value to be used in the stored pr
  // Hybrid search query
  var sql =
              @"DECLARE @e VECTOR(1536);
-			EXEC dbo.GET_EMBEDDINGS @model = '<azure-openai-embeddings-model', @text = '@userMessage', @embedding = @e OUTPUT;
+			EXEC dbo.GET_EMBEDDINGS @model = '<azure-openai-embeddings-model>', @text = '@userMessage', @embedding = @e OUTPUT;
 
 				 -- Comprehensive query with multiple filters.
 			SELECT TOP(5)
