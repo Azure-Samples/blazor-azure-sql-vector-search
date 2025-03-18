@@ -41,7 +41,8 @@
 
     @using Microsoft.SemanticKernel;
     @using Microsoft.SemanticKernel.ChatCompletion;
-    @using System.ComponentModel
+    @using System.ComponentModel;
+    @using Microsoft.Data.SqlClient;
 
     public class Message
     {
@@ -56,10 +57,10 @@
     private async Task SemanticKernelClient()
     {
         // Azure OpenAI app settings
-        string deploymentName = _config["OpenAI:DEPLOYMENT_NAME"];
-        string endpoint = _config["OpenAI:ENDPOINT"];
-        string apiKey = _config["OpenAI:API_KEY"];
-        string modelId = _config["OpenAI:MODEL_ID"];
+        string deploymentName = _config["AzureOpenAI:DEPLOYMENT_NAME"];
+        string endpoint = _config["AzureOpenAI:ENDPOINT"];
+        string apiKey = _config["AzureOpenAI:API_KEY"];
+        string modelId = _config["AzureOpenAI:MODEL_ID"];
 
         // Semantic Kernel builder
         var builder = Kernel.CreateBuilder();
@@ -81,6 +82,85 @@
                     Assistant: ");
 
         ChatHistory chatHistory = new("""You are a helpful assistant that answers questions about my data""");
+
+        #region Azure SQL
+        // Database connection string
+        var connectionString = _config["ConnectionStrings:AZURE_SQL_CONNECTIONSTRING"];
+
+        try
+        {
+            await using var connection = new SqlConnection(connectionString);
+            Console.WriteLine("\nQuery data results:");
+            Console.WriteLine("=============================================");
+
+            await connection.OpenAsync();
+
+            // Hybrid search query
+            var sql =
+                        @"DECLARE @e VECTOR(1536);
+					EXEC dbo.GET_EMBEDDINGS @model = 'text-embedding-ada-002', @text = '@userMessage', @embedding = @e OUTPUT;
+
+						 -- Comprehensive query with multiple filters.
+					SELECT TOP(5)
+						f.Score,
+						f.Summary,
+						f.Text,
+						VECTOR_DISTANCE('cosine', @e, VectorBinary) AS Distance,
+						CASE
+							WHEN LEN(f.Text) > 100 THEN 'Detailed Review'
+							ELSE 'Short Review'
+						END AS ReviewLength,
+						CASE
+							WHEN f.Score >= 4 THEN 'High Score'
+							WHEN f.Score BETWEEN 2 AND 3 THEN 'Medium Score'
+							ELSE 'Low Score'
+						END AS ScoreCategory
+					FROM finefoodembeddings10k$ f
+					WHERE
+						f.UserId NOT LIKE 'Anonymous%' -- User-based filter to exclude anonymous users
+						AND f.Score >= 4 -- Score threshold filter
+						AND LEN(f.Text) > 50 -- Text length filter for detailed reviews
+                        AND (f.Text LIKE '%juice%') -- Inclusion of specific words
+					ORDER BY
+						Distance,  -- Order by distance
+						f.Score DESC, -- Secondary order by review score
+						ReviewLength DESC; -- Tertiary order by review length
+				";
+
+            // Set SQL Parameter to pass in user message
+            SqlParameter param = new SqlParameter();
+            param.ParameterName = "@userMessage";
+            param.Value = message;
+
+            await using var command = new SqlCommand(sql, connection);
+
+            // add SqlParameter to SqlCommand
+            command.Parameters.Add(param);
+
+            await using var reader = await command.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                // write results to console logs
+                Console.WriteLine("{0} {1} {2} {3}", "Score: " + reader.GetDouble(0), "Text: " + reader.GetString(1), "Summary: " + reader.GetString(2), "Distance: " + reader.GetDouble(3));
+                Console.WriteLine();
+
+                // add results to chat history
+                chatHistory.AddSystemMessage(reader.GetString(1) + ", " + reader.GetString(2));
+
+            }
+        }
+        catch (SqlException e)
+        {
+            Console.WriteLine($"SQL Error: {e.Message}");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.ToString());
+        }
+
+        Console.WriteLine("Done");
+        #endregion
 
         var chatResult = kernel.InvokeStreamingAsync<StreamingChatMessageContent>(
                 chat,
