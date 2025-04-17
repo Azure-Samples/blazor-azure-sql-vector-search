@@ -1,6 +1,20 @@
 # Clone and deploy a .NET 9 Blazor chat app connected to Azure OpenAI
  Please see the [documentation](https://learn.microsoft.com/azure/app-service/deploy-intelligent-apps-dotnet-to-azure-sql) for more detailed information about this sample.
 
+## Template deployment (optional)
+You can deploy this sample using a deployment template with the azd command in the Azure CLI. The azd template creates all the resources needed for this sample to run. 
+
+Clone the code locally and use `azd init` to create a new environment.
+Deploy the resources with azd using `azd up`. 
+
+The following resources will be created:
+- Azure App Service and App service plan
+- Azure Key Vault
+- Azure OpenAI resource with deployment models
+- Azure SQL database (optional)
+  
+If you prefer to just use the sample itself, follow the steps below.
+
 ## Prerequisites
 - Azure OpenAI resource with deployed embeddings and chat models
 - Azure SQL database resource with vector embeddings
@@ -30,15 +44,11 @@ Go to the `appsettings.json` file and insert the following values from your Azur
       "Microsoft.AspNetCore": "Warning"
     }
   },
-  "AzureOpenAI": {
-    "DEPLOYMENT_NAME": "<deployment-name>",
-    "ENDPOINT": "https://<endpoint-name>.openai.azure.com/",
-    "API_KEY": "<api-key>",
-    "MODEL_ID": "<model-id>"
-  },
-    "ConnectionStrings": {
-    "AZURE_SQL_CONNECTIONSTRING": "<connection-string>"
-  },
+  "DEPLOYMENT_NAME": "<deployment-name>",
+  "ENDPOINT": "https://<endpoint-name>.openai.azure.com/",
+  "API_KEY": "<api-key>",
+  "MODEL_ID": "<model-id>",
+  "AZURE_SQL_CONNECTIONSTRING": "<connection-string>",
   "AllowedHosts": "*"
 }
 ```
@@ -86,3 +96,4 @@ Once the values are saved, run the application using F5 and navigate to the Chat
 
 ### 4. Deploy to App Service
 You can deploy the web app as you normally would. Although your secrets in app settings are encrypted at rest, we highly recommend setting up managed identity to secure your resources. Please see the documentation for this sample to secure your resources with [managed identity](https://learn.microsoft.com/azure/app-service/deploy-intelligent-apps-dotnet-to-azure-sql#secure-your-data-with-managed-identity)
+
