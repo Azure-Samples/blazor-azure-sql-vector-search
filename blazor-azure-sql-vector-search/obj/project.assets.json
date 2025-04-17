@@ -2,19 +2,20 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "Azure.AI.OpenAI/2.2.0-beta.1": {
+      "Azure.AI.OpenAI/2.2.0-beta.4": {
         "type": "package",
         "dependencies": {
           "Azure.Core": "1.44.1",
-          "OpenAI": "2.2.0-beta.1"
+          "OpenAI": "2.2.0-beta.4",
+          "System.ClientModel": "1.4.0-beta.1"
         },
         "compile": {
-          "lib/netstandard2.0/Azure.AI.OpenAI.dll": {
+          "lib/net8.0/Azure.AI.OpenAI.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Azure.AI.OpenAI.dll": {
+          "lib/net8.0/Azure.AI.OpenAI.dll": {
             "related": ".xml"
           }
         }
@@ -42,24 +43,22 @@
           }
         }
       },
-      "Azure.Identity/1.11.4": {
+      "Azure.Identity/1.13.2": {
         "type": "package",
         "dependencies": {
-          "Azure.Core": "1.38.0",
-          "Microsoft.Identity.Client": "4.61.3",
-          "Microsoft.Identity.Client.Extensions.Msal": "4.61.3",
-          "System.Memory": "4.5.4",
-          "System.Security.Cryptography.ProtectedData": "4.7.0",
-          "System.Text.Json": "4.7.2",
+          "Azure.Core": "1.44.1",
+          "Microsoft.Identity.Client": "4.67.2",
+          "Microsoft.Identity.Client.Extensions.Msal": "4.67.2",
+          "System.Memory": "4.5.5",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "compile": {
-          "lib/netstandard2.0/Azure.Identity.dll": {
+          "lib/net8.0/Azure.Identity.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Azure.Identity.dll": {
+          "lib/net8.0/Azure.Identity.dll": {
             "related": ".xml"
           }
         }
@@ -196,7 +195,7 @@
           }
         }
       },
-      "Microsoft.Extensions.AI.Abstractions/9.3.0-preview.1.25114.11": {
+      "Microsoft.Extensions.AI.Abstractions/9.4.0-preview.1.25207.5": {
         "type": "package",
         "compile": {
           "lib/net9.0/Microsoft.Extensions.AI.Abstractions.dll": {
@@ -341,7 +340,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.VectorData.Abstractions/9.0.0-preview.1.25078.1": {
+      "Microsoft.Extensions.VectorData.Abstractions/9.0.0-preview.1.25161.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.VectorData.Abstractions.dll": {
@@ -354,36 +353,36 @@
           }
         }
       },
-      "Microsoft.Identity.Client/4.61.3": {
+      "Microsoft.Identity.Client/4.67.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.IdentityModel.Abstractions": "6.35.0",
           "System.Diagnostics.DiagnosticSource": "6.0.1"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Identity.Client.dll": {
+          "lib/net8.0/Microsoft.Identity.Client.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Identity.Client.dll": {
+          "lib/net8.0/Microsoft.Identity.Client.dll": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.Identity.Client.Extensions.Msal/4.61.3": {
+      "Microsoft.Identity.Client.Extensions.Msal/4.67.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Identity.Client": "4.61.3",
+          "Microsoft.Identity.Client": "4.67.2",
           "System.Security.Cryptography.ProtectedData": "4.5.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
+          "lib/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
+          "lib/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll": {
             "related": ".xml"
           }
         }
@@ -482,11 +481,11 @@
           }
         }
       },
-      "Microsoft.SemanticKernel/1.38.0": {
+      "Microsoft.SemanticKernel/1.46.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.SemanticKernel.Connectors.AzureOpenAI": "1.38.0",
-          "Microsoft.SemanticKernel.Core": "1.38.0"
+          "Microsoft.SemanticKernel.Connectors.AzureOpenAI": "1.46.0",
+          "Microsoft.SemanticKernel.Core": "1.46.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.SemanticKernel.dll": {
@@ -499,15 +498,15 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Abstractions/1.38.0": {
+      "Microsoft.SemanticKernel.Abstractions/1.46.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
           "Microsoft.Bcl.HashCode": "1.1.1",
-          "Microsoft.Extensions.AI.Abstractions": "9.3.0-preview.1.25114.11",
+          "Microsoft.Extensions.AI.Abstractions": "9.4.0-preview.1.25207.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
-          "Microsoft.Extensions.VectorData.Abstractions": "9.0.0-preview.1.25078.1",
+          "Microsoft.Extensions.VectorData.Abstractions": "9.0.0-preview.1.25161.1",
           "System.Diagnostics.DiagnosticSource": "8.0.1",
           "System.Text.Json": "8.0.5"
         },
@@ -522,12 +521,12 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.38.0": {
+      "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.46.0": {
         "type": "package",
         "dependencies": {
-          "Azure.AI.OpenAI": "[2.2.0-beta.1]",
-          "Microsoft.SemanticKernel.Connectors.OpenAI": "1.38.0",
-          "Microsoft.SemanticKernel.Core": "1.38.0"
+          "Azure.AI.OpenAI": "[2.2.0-beta.4]",
+          "Microsoft.SemanticKernel.Connectors.OpenAI": "1.46.0",
+          "Microsoft.SemanticKernel.Core": "1.46.0"
         },
         "compile": {
           "lib/net8.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll": {
@@ -540,11 +539,11 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Connectors.OpenAI/1.38.0": {
+      "Microsoft.SemanticKernel.Connectors.OpenAI/1.46.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.SemanticKernel.Core": "1.38.0",
-          "OpenAI": "[2.2.0-beta.1]"
+          "Microsoft.SemanticKernel.Core": "1.46.0",
+          "OpenAI": "[2.2.0-beta.4]"
         },
         "compile": {
           "lib/net8.0/Microsoft.SemanticKernel.Connectors.OpenAI.dll": {
@@ -557,12 +556,12 @@
           }
         }
       },
-      "Microsoft.SemanticKernel.Core/1.38.0": {
+      "Microsoft.SemanticKernel.Core/1.46.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
-          "Microsoft.SemanticKernel.Abstractions": "1.38.0",
-          "System.Numerics.Tensors": "8.0.0",
+          "Microsoft.SemanticKernel.Abstractions": "1.46.0",
+          "System.Numerics.Tensors": "9.0.0",
           "System.Text.Json": "8.0.5"
         },
         "compile": {
@@ -589,7 +588,7 @@
           }
         }
       },
-      "OpenAI/2.2.0-beta.1": {
+      "OpenAI/2.2.0-beta.4": {
         "type": "package",
         "dependencies": {
           "System.ClientModel": "1.2.1",
@@ -606,19 +605,19 @@
           }
         }
       },
-      "System.ClientModel/1.2.1": {
+      "System.ClientModel/1.4.0-beta.1": {
         "type": "package",
         "dependencies": {
-          "System.Memory.Data": "6.0.0",
-          "System.Text.Json": "6.0.10"
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "System.Memory.Data": "6.0.1"
         },
         "compile": {
-          "lib/net6.0/System.ClientModel.dll": {
+          "lib/net8.0/System.ClientModel.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.ClientModel.dll": {
+          "lib/net8.0/System.ClientModel.dll": {
             "related": ".xml"
           }
         }
@@ -702,7 +701,7 @@
           }
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.5.5": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -711,11 +710,8 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "System.Memory.Data/6.0.0": {
+      "System.Memory.Data/6.0.1": {
         "type": "package",
-        "dependencies": {
-          "System.Text.Json": "6.0.0"
-        },
         "compile": {
           "lib/net6.0/System.Memory.Data.dll": {
             "related": ".xml"
@@ -730,20 +726,20 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Numerics.Tensors/8.0.0": {
+      "System.Numerics.Tensors/9.0.0": {
         "type": "package",
         "compile": {
-          "lib/net8.0/System.Numerics.Tensors.dll": {
+          "lib/net9.0/System.Numerics.Tensors.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/System.Numerics.Tensors.dll": {
+          "lib/net9.0/System.Numerics.Tensors.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -862,18 +858,20 @@
     }
   },
   "libraries": {
-    "Azure.AI.OpenAI/2.2.0-beta.1": {
-      "sha512": "PQQg4Jc4NdwBnYID4Rr2SzJP72d1ihKUR3PKBoKV9cRD1cEGNjokkZRG/4j62uEFtNoxcF+ugQDMi9ShL/Y8gQ==",
+    "Azure.AI.OpenAI/2.2.0-beta.4": {
+      "sha512": "qjCgspdq67x+urifvf7Dkz4tX5HVU3AlF2XUYU/kQBObKQihPsTYSQJ4tiMHEMNjaKRbfHzxnE2vnuhcqUUWCg==",
       "type": "package",
-      "path": "azure.ai.openai/2.2.0-beta.1",
+      "path": "azure.ai.openai/2.2.0-beta.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.ai.openai.2.2.0-beta.1.nupkg.sha512",
+        "azure.ai.openai.2.2.0-beta.4.nupkg.sha512",
         "azure.ai.openai.nuspec",
         "azureicon.png",
+        "lib/net8.0/Azure.AI.OpenAI.dll",
+        "lib/net8.0/Azure.AI.OpenAI.xml",
         "lib/netstandard2.0/Azure.AI.OpenAI.dll",
         "lib/netstandard2.0/Azure.AI.OpenAI.xml"
       ]
@@ -900,18 +898,20 @@
         "lib/netstandard2.0/Azure.Core.xml"
       ]
     },
-    "Azure.Identity/1.11.4": {
-      "sha512": "Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
+    "Azure.Identity/1.13.2": {
+      "sha512": "CngQVQELdzFmsGSWyGIPIUOCrII7nApMVWxVmJCKQQrWxRXcNquCsZ+njRJRnhFUfD+KMAhpjyRCaceE4EOL6A==",
       "type": "package",
-      "path": "azure.identity/1.11.4",
+      "path": "azure.identity/1.13.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.identity.1.11.4.nupkg.sha512",
+        "azure.identity.1.13.2.nupkg.sha512",
         "azure.identity.nuspec",
         "azureicon.png",
+        "lib/net8.0/Azure.Identity.dll",
+        "lib/net8.0/Azure.Identity.xml",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
@@ -1081,10 +1081,10 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
-    "Microsoft.Extensions.AI.Abstractions/9.3.0-preview.1.25114.11": {
-      "sha512": "Bh5RqAGzOUTSnx6vLrQqVH5LJXSPYmMF8/worfSmKiJ18blVQRHLqvpcc/JhSdFf/3YTOk2PPpWSX1PK+cbiPQ==",
+    "Microsoft.Extensions.AI.Abstractions/9.4.0-preview.1.25207.5": {
+      "sha512": "CptQvHk8wY+qb+AA3SoKlc5NQcXSoFNbt8Z+bAkt/tEZ61JMxFZ0dMG1AwCn14hRCUinFbxyPYXr5Zrjp99m3g==",
       "type": "package",
-      "path": "microsoft.extensions.ai.abstractions/9.3.0-preview.1.25114.11",
+      "path": "microsoft.extensions.ai.abstractions/9.4.0-preview.1.25207.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1098,7 +1098,7 @@
         "lib/net9.0/Microsoft.Extensions.AI.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.AI.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.AI.Abstractions.xml",
-        "microsoft.extensions.ai.abstractions.9.3.0-preview.1.25114.11.nupkg.sha512",
+        "microsoft.extensions.ai.abstractions.9.4.0-preview.1.25207.5.nupkg.sha512",
         "microsoft.extensions.ai.abstractions.nuspec"
       ]
     },
@@ -1364,10 +1364,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.VectorData.Abstractions/9.0.0-preview.1.25078.1": {
-      "sha512": "5woABLba0aAyk6X6jamKZg/3a5X0+z7hj8+325phSkPkiJCFUeY0DIlIH4KvAjtBYlLyJOObsFXdKBekFlE8hw==",
+    "Microsoft.Extensions.VectorData.Abstractions/9.0.0-preview.1.25161.1": {
+      "sha512": "irdKMpHB9v+S+DpdrYHIRb7ADqA9weRvmcvmoP2jb/x75b4GQGxVbFCcMRcyQaHPg9zOvqnKq8ZZZ4MUfDGujA==",
       "type": "package",
-      "path": "microsoft.extensions.vectordata.abstractions/9.0.0-preview.1.25078.1",
+      "path": "microsoft.extensions.vectordata.abstractions/9.0.0-preview.1.25161.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1380,45 +1380,49 @@
         "lib/net8.0/Microsoft.Extensions.VectorData.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.VectorData.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.VectorData.Abstractions.xml",
-        "microsoft.extensions.vectordata.abstractions.9.0.0-preview.1.25078.1.nupkg.sha512",
+        "microsoft.extensions.vectordata.abstractions.9.0.0-preview.1.25161.1.nupkg.sha512",
         "microsoft.extensions.vectordata.abstractions.nuspec",
         "neticon.png"
       ]
     },
-    "Microsoft.Identity.Client/4.61.3": {
-      "sha512": "naJo/Qm35Caaoxp5utcw+R8eU8ZtLz2ALh8S+gkekOYQ1oazfCQMWVT4NJ/FnHzdIJlm8dMz0oMpMGCabx5odA==",
+    "Microsoft.Identity.Client/4.67.2": {
+      "sha512": "37t0TfekfG6XM8kue/xNaA66Qjtti5Qe1xA41CK+bEd8VD76/oXJc+meFJHGzygIC485dCpKoamG/pDfb9Qd7Q==",
       "type": "package",
-      "path": "microsoft.identity.client/4.61.3",
+      "path": "microsoft.identity.client/4.67.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "lib/net462/Microsoft.Identity.Client.dll",
         "lib/net462/Microsoft.Identity.Client.xml",
-        "lib/net6.0-android31.0/Microsoft.Identity.Client.dll",
-        "lib/net6.0-android31.0/Microsoft.Identity.Client.xml",
-        "lib/net6.0-ios15.4/Microsoft.Identity.Client.dll",
-        "lib/net6.0-ios15.4/Microsoft.Identity.Client.xml",
-        "lib/net6.0/Microsoft.Identity.Client.dll",
-        "lib/net6.0/Microsoft.Identity.Client.xml",
+        "lib/net472/Microsoft.Identity.Client.dll",
+        "lib/net472/Microsoft.Identity.Client.xml",
+        "lib/net8.0-android34.0/Microsoft.Identity.Client.aar",
+        "lib/net8.0-android34.0/Microsoft.Identity.Client.dll",
+        "lib/net8.0-android34.0/Microsoft.Identity.Client.xml",
+        "lib/net8.0-ios18.0/Microsoft.Identity.Client.dll",
+        "lib/net8.0-ios18.0/Microsoft.Identity.Client.xml",
+        "lib/net8.0/Microsoft.Identity.Client.dll",
+        "lib/net8.0/Microsoft.Identity.Client.xml",
         "lib/netstandard2.0/Microsoft.Identity.Client.dll",
         "lib/netstandard2.0/Microsoft.Identity.Client.xml",
-        "microsoft.identity.client.4.61.3.nupkg.sha512",
+        "microsoft.identity.client.4.67.2.nupkg.sha512",
         "microsoft.identity.client.nuspec"
       ]
     },
-    "Microsoft.Identity.Client.Extensions.Msal/4.61.3": {
-      "sha512": "PWnJcznrSGr25MN8ajlc2XIDW4zCFu0U6FkpaNLEWLgd1NgFCp5uDY3mqLDgM8zCN8hqj8yo5wHYfLB2HjcdGw==",
+    "Microsoft.Identity.Client.Extensions.Msal/4.67.2": {
+      "sha512": "DKs+Lva6csEUZabw+JkkjtFgVmcXh4pJeQy5KH5XzPOaKNoZhAMYj1qpKd97qYTZKXIFH12bHPk0DA+6krw+Cw==",
       "type": "package",
-      "path": "microsoft.identity.client.extensions.msal/4.61.3",
+      "path": "microsoft.identity.client.extensions.msal/4.67.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.xml",
+        "README.md",
+        "lib/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "lib/net8.0/Microsoft.Identity.Client.Extensions.Msal.xml",
         "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll",
         "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "microsoft.identity.client.extensions.msal.4.61.3.nupkg.sha512",
+        "microsoft.identity.client.extensions.msal.4.67.2.nupkg.sha512",
         "microsoft.identity.client.extensions.msal.nuspec"
       ]
     },
@@ -1560,10 +1564,10 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel/1.38.0": {
-      "sha512": "c1j6JHGqu8iAmQueD0q7shDYRLIBKuhDo5K0755BIsOFA8gRhDH3twTJZ2shFKhkZWyvD1Gd53QUnSSFyT7vgA==",
+    "Microsoft.SemanticKernel/1.46.0": {
+      "sha512": "vwdxcFQo750QCPTlTP+j/sCpb4W6OZ/hHaTREgRIZqUT4jPe0HSdWeV6Lg0UfGAId7ZJ7zVtk1kBZJY1eQsMRw==",
       "type": "package",
-      "path": "microsoft.semantickernel/1.38.0",
+      "path": "microsoft.semantickernel/1.46.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1573,14 +1577,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.xml",
-        "microsoft.semantickernel.1.38.0.nupkg.sha512",
+        "microsoft.semantickernel.1.46.0.nupkg.sha512",
         "microsoft.semantickernel.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Abstractions/1.38.0": {
-      "sha512": "z2Cl68S5gfotMQnE/8BAkAsgUsE5bVziXaxo+zZesn2GWMoZUKNI96a817/Uhl93A6mW4kIer7z/In3eT+xtbg==",
+    "Microsoft.SemanticKernel.Abstractions/1.46.0": {
+      "sha512": "wuNAvHybODzWqLocrDvVPuwDJpbrrJgibk2VNMCMf3wqOfocsBjFEcfYiYEAguTVqJit3z1x5jLwXElKGM+fpQ==",
       "type": "package",
-      "path": "microsoft.semantickernel.abstractions/1.38.0",
+      "path": "microsoft.semantickernel.abstractions/1.46.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1590,14 +1594,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Abstractions.xml",
-        "microsoft.semantickernel.abstractions.1.38.0.nupkg.sha512",
+        "microsoft.semantickernel.abstractions.1.46.0.nupkg.sha512",
         "microsoft.semantickernel.abstractions.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.38.0": {
-      "sha512": "0NDm7qOya5PWnaTDU0QHF/DwHeGk7OQaezW0GKTRS2Vbg3M2e9yWMBcQD/LAMHkZmCEPIrBLMzK1rc1LtctCOw==",
+    "Microsoft.SemanticKernel.Connectors.AzureOpenAI/1.46.0": {
+      "sha512": "aftHago8TNp7Liw2z3eBXPP/1DqhUv3bBpZV3fDqXdKLBQHxFMdY++x3UA+wzv7j27CtKp9jvMguYwlpGoJ/uw==",
       "type": "package",
-      "path": "microsoft.semantickernel.connectors.azureopenai/1.38.0",
+      "path": "microsoft.semantickernel.connectors.azureopenai/1.46.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1607,14 +1611,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.AzureOpenAI.xml",
-        "microsoft.semantickernel.connectors.azureopenai.1.38.0.nupkg.sha512",
+        "microsoft.semantickernel.connectors.azureopenai.1.46.0.nupkg.sha512",
         "microsoft.semantickernel.connectors.azureopenai.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Connectors.OpenAI/1.38.0": {
-      "sha512": "j77ehuq4xDr6Prr9/VfmTAV0OinMinKgH2h3AL6I6evOe5U68ygVHL4Y7qygReMcO2sv8qXyu5/b6qOOY5lUmg==",
+    "Microsoft.SemanticKernel.Connectors.OpenAI/1.46.0": {
+      "sha512": "owKzEIqee5y2Ef5MICX59YOak4+2RVsErxWMWEkCntEL0lAtfHI3riOFFN/w5iA+aNxDxbvCFaz420EY3d5GYA==",
       "type": "package",
-      "path": "microsoft.semantickernel.connectors.openai/1.38.0",
+      "path": "microsoft.semantickernel.connectors.openai/1.46.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1624,14 +1628,14 @@
         "lib/net8.0/Microsoft.SemanticKernel.Connectors.OpenAI.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.OpenAI.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Connectors.OpenAI.xml",
-        "microsoft.semantickernel.connectors.openai.1.38.0.nupkg.sha512",
+        "microsoft.semantickernel.connectors.openai.1.46.0.nupkg.sha512",
         "microsoft.semantickernel.connectors.openai.nuspec"
       ]
     },
-    "Microsoft.SemanticKernel.Core/1.38.0": {
-      "sha512": "HKeWnU89+27dMJLa63oVb/Y/ihygyV1apNqm+N3Y+8S5W0s2rkVodMyFnFF7Z66nfi03WKDVekMKXSXNtuX5+g==",
+    "Microsoft.SemanticKernel.Core/1.46.0": {
+      "sha512": "RXWmIl7eRHNAEIQHxvrTU4aKPR3paR7HKrbhaUisDZ6c6XpfWg/qAjigWiGe6C7JpufoXr3xrrrcMHHgNSCS/A==",
       "type": "package",
-      "path": "microsoft.semantickernel.core/1.38.0",
+      "path": "microsoft.semantickernel.core/1.46.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1641,7 +1645,7 @@
         "lib/net8.0/Microsoft.SemanticKernel.Core.xml",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Core.dll",
         "lib/netstandard2.0/Microsoft.SemanticKernel.Core.xml",
-        "microsoft.semantickernel.core.1.38.0.nupkg.sha512",
+        "microsoft.semantickernel.core.1.46.0.nupkg.sha512",
         "microsoft.semantickernel.core.nuspec"
       ]
     },
@@ -1663,10 +1667,10 @@
         "microsoft.sqlserver.server.nuspec"
       ]
     },
-    "OpenAI/2.2.0-beta.1": {
-      "sha512": "h0NKU7n5CppiyhZvcu6RtmrHUnN8IUpvbfCuEhFMPaeWKJIGEpRVP3PVywuJAqPugXp0zMFM3afFQFDQ8Sjiaw==",
+    "OpenAI/2.2.0-beta.4": {
+      "sha512": "JZ4/mlVXLaXDIZuC4Ddu0KCAA23z4Ax1AQTS26mpJRuSShjXik7DU8a3basY3ddD51W04F7jeX5eAXamKA6rHw==",
       "type": "package",
-      "path": "openai/2.2.0-beta.1",
+      "path": "openai/2.2.0-beta.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1679,14 +1683,14 @@
         "lib/net8.0/OpenAI.xml",
         "lib/netstandard2.0/OpenAI.dll",
         "lib/netstandard2.0/OpenAI.xml",
-        "openai.2.2.0-beta.1.nupkg.sha512",
+        "openai.2.2.0-beta.4.nupkg.sha512",
         "openai.nuspec"
       ]
     },
-    "System.ClientModel/1.2.1": {
-      "sha512": "s9+M5El+DXdCRRLzxak8uGBKWT8H/eIssGpFtpaMKdJULrQbBDPH/zFbVyHX+NDczhS5EvjHFbBH9/L+0UhmcA==",
+    "System.ClientModel/1.4.0-beta.1": {
+      "sha512": "ZR0fKC94VS4P80vmxjk7l13/jPBXV0GMoE4jQfkYk8m2YV+dlw8jSC+b6eAfyBz0u+soN4CjhT3OdOC5KHaXxg==",
       "type": "package",
-      "path": "system.clientmodel/1.2.1",
+      "path": "system.clientmodel/1.4.0-beta.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1695,9 +1699,11 @@
         "README.md",
         "lib/net6.0/System.ClientModel.dll",
         "lib/net6.0/System.ClientModel.xml",
+        "lib/net8.0/System.ClientModel.dll",
+        "lib/net8.0/System.ClientModel.xml",
         "lib/netstandard2.0/System.ClientModel.dll",
         "lib/netstandard2.0/System.ClientModel.xml",
-        "system.clientmodel.1.2.1.nupkg.sha512",
+        "system.clientmodel.1.4.0-beta.1.nupkg.sha512",
         "system.clientmodel.nuspec"
       ]
     },
@@ -1815,10 +1821,10 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
-    "System.Memory/4.5.4": {
-      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
       "type": "package",
-      "path": "system.memory/4.5.4",
+      "path": "system.memory/4.5.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1832,16 +1838,16 @@
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.4.5.5.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
     },
-    "System.Memory.Data/6.0.0": {
-      "sha512": "ntFHArH3I4Lpjf5m4DCXQHJuGwWPNVJPaAvM95Jy/u+2Yzt2ryiyIN04LAogkjP9DeRcEOiviAjQotfmPq/FrQ==",
+    "System.Memory.Data/6.0.1": {
+      "sha512": "yliDgLh9S9Mcy5hBIdZmX6yphYIW3NH+3HN1kV1m7V1e0s7LNTw/tHNjJP4U9nSMEgl3w1TzYv/KA1Tg9NYy6w==",
       "type": "package",
-      "path": "system.memory.data/6.0.0",
+      "path": "system.memory.data/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1856,15 +1862,15 @@
         "lib/net6.0/System.Memory.Data.xml",
         "lib/netstandard2.0/System.Memory.Data.dll",
         "lib/netstandard2.0/System.Memory.Data.xml",
-        "system.memory.data.6.0.0.nupkg.sha512",
+        "system.memory.data.6.0.1.nupkg.sha512",
         "system.memory.data.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Numerics.Tensors/8.0.0": {
-      "sha512": "fhODzTe9ON9IzmRfyVeA6L8yXOciMtpq1YufkRVBliggcVKZE+XDxqIn46+yF4PWR6wNPuDpXtPpuY86VcKxUA==",
+    "System.Numerics.Tensors/9.0.0": {
+      "sha512": "hyJB4UlpAi19Xr9AXzu2NuagKC4lPfHObNMEAA0HmqFz2rX7wKgzeYzO/jM/eBHDhnUGFFEjk5cOoJaxqg5J4A==",
       "type": "package",
-      "path": "system.numerics.tensors/8.0.0",
+      "path": "system.numerics.tensors/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1874,19 +1880,17 @@
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Numerics.Tensors.targets",
         "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Numerics.Tensors.targets",
         "lib/net462/System.Numerics.Tensors.dll",
         "lib/net462/System.Numerics.Tensors.xml",
-        "lib/net6.0/System.Numerics.Tensors.dll",
-        "lib/net6.0/System.Numerics.Tensors.xml",
-        "lib/net7.0/System.Numerics.Tensors.dll",
-        "lib/net7.0/System.Numerics.Tensors.xml",
         "lib/net8.0/System.Numerics.Tensors.dll",
         "lib/net8.0/System.Numerics.Tensors.xml",
+        "lib/net9.0/System.Numerics.Tensors.dll",
+        "lib/net9.0/System.Numerics.Tensors.xml",
         "lib/netstandard2.0/System.Numerics.Tensors.dll",
         "lib/netstandard2.0/System.Numerics.Tensors.xml",
-        "system.numerics.tensors.8.0.0.nupkg.sha512",
+        "system.numerics.tensors.9.0.0.nupkg.sha512",
         "system.numerics.tensors.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2170,8 +2174,9 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Azure.Identity >= 1.13.2",
       "Microsoft.Data.SqlClient >= 6.0.1",
-      "Microsoft.SemanticKernel >= 1.38.0"
+      "Microsoft.SemanticKernel >= 1.46.0"
     ]
   },
   "packageFolders": {
@@ -2181,11 +2186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search.csproj",
+      "projectUniqueName": "C:\\Users\\jefmarti\\source\\repos\\AZD\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search.csproj",
       "projectName": "blazor-azure-sql-vector-search",
-      "projectPath": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search.csproj",
+      "projectPath": "C:\\Users\\jefmarti\\source\\repos\\AZD\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search.csproj",
       "packagesPath": "C:\\Users\\jefmarti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jefmarti\\source\\repos\\blazor-azure-sql-vector-search\\blazor-azure-sql-vector-search\\obj\\",
+      "outputPath": "C:\\Users\\jefmarti\\source\\repos\\AZD\\blazor-azure-sql-vector-search\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2224,13 +2229,17 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "Azure.Identity": {
+            "target": "Package",
+            "version": "[1.13.2, )"
+          },
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[6.0.1, )"
           },
           "Microsoft.SemanticKernel": {
             "target": "Package",
-            "version": "[1.38.0, )"
+            "version": "[1.46.0, )"
           }
         },
         "imports": [
@@ -2252,7 +2261,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
