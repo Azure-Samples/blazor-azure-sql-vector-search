@@ -12,6 +12,8 @@ The following resources will be created:
 - Azure Key Vault
 - Azure OpenAI resource with deployment models
 - Azure SQL database (optional)
+
+To run the application after your resouces are provisioned, you will need to copy your API Key from your Azure OpenAI resource and add it to your app settings or use a Key Vault secret identifier in a Key Vault reference. If using Key Vault you may need to enable a user access policy to view the keys in the portal. The chat app will run once that's complete. If you would like to setup Azure SQL, uncomment the module in `main.bicep` to create the resource, uncomment the Azure Sql region in `chat.razor` to enable the code, and follow the instructions in the [documentation](https://learn.microsoft.com/azure/app-service/deploy-intelligent-apps-dotnet-to-azure-sql) to setup the SQL database.
   
 If you prefer to just use the sample itself, follow the steps below.
 
