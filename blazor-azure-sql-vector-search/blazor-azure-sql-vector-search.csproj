@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -6,11 +6,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>blazor-azure-sql-vector-search</RootNamespace>
     <AssemblyName>$(AssemblyName.Replace(' ', '_'))</AssemblyName>
+    <UserSecretsId>89b707b0-0690-4b2f-9692-cd61bda94718</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.13.2" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
-    <PackageReference Include="Microsoft.SemanticKernel" Version="1.38.0" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.46.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="infra\modules\AzureSQL\" />
   </ItemGroup>
 
 </Project>

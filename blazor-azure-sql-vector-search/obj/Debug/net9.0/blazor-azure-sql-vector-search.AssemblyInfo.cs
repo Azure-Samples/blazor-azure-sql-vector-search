@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("89b707b0-0690-4b2f-9692-cd61bda94718")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("blazor-azure-sql-vector-search")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ee025b271fed11d41f22a83919df96d0f835c11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b1c31781273cb45a336518deb6d8dcb0e32daab")]
 [assembly: System.Reflection.AssemblyProductAttribute("blazor-azure-sql-vector-search")]
 [assembly: System.Reflection.AssemblyTitleAttribute("blazor-azure-sql-vector-search")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

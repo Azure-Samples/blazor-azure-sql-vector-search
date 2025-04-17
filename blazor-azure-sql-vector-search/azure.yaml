@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: blazor-azure-sql-vector-search
+services:
+    blazor-azure-sql-vector-search:
+        project: .
+        host: appservice
+        language: dotnet
+        ## dist: target ## might be needed???
