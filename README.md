@@ -1,11 +1,18 @@
 # Clone and deploy a .NET 9 Blazor chat app connected to Azure OpenAI
  Please see the [documentation](https://learn.microsoft.com/azure/app-service/deploy-intelligent-apps-dotnet-to-azure-sql) for more detailed information about this sample.
 
-## Template deployment (optional)
+## Deploy with Azure Developer CLI
 You can deploy this sample using a deployment template with the azd command in the Azure CLI. The azd template creates all the resources needed for this sample to run. 
 
-Clone the code locally and use `azd init` to create a new environment.
-Deploy the resources with azd using `azd up`. 
+1. Install the [Azure Dev CLI](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd).
+2. Login to your Azure account:
+    `azd auth login`
+3. Create the initialization code and a new environment:
+     `azd init -t Azure-Samples/blazor-azure-sql-vector-search` 
+4. Switch to the working directory:
+    `cd blazor-azure-sql-vector-search`
+5. Provision and deploy all the resources:
+    `azd up`
 
 The following resources will be created:
 - Azure App Service and App service plan
