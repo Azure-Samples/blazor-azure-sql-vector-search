@@ -1,5 +1,6 @@
 param appName string
 param keyVaultName string
+param location string
 
 param gptDeploymentName string
 param gptModelName string
@@ -18,6 +19,7 @@ resource keyVault 'Microsoft.KeyVault/vaults@2023-02-01' existing = {
 module keyVaultSecrets '../KeyVault/KeyVault.bicep' = {
   name: 'keyVaultSecretsDeployment'
   params: {
+    location: location
     keyVaultName: keyVault.name
     appName: appName
     gptDeploymentName: gptDeploymentName

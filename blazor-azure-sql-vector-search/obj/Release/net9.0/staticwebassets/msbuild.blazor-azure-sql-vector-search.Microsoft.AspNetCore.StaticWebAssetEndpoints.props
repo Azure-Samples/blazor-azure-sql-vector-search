@@ -16,13 +16,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\blazor-azure-sql-vector-search.psiwaz10cw.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Ke0GbSRdKkdBVtnfCHSTAmTMYhED7h5mtkRketpS5zA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6007"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Ke0GbSRdKkdBVtnfCHSTAmTMYhED7h5mtkRketpS5zA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Apr 2025 23:37:15 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6007"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Ke0GbSRdKkdBVtnfCHSTAmTMYhED7h5mtkRketpS5zA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 20:34:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/blazor-azure-sql-vector-search/blazor-azure-sql-vector-search.psiwaz10cw.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\blazor-azure-sql-vector-search.psiwaz10cw.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"psiwaz10cw"},{"Name":"integrity","Value":"sha256-Ke0GbSRdKkdBVtnfCHSTAmTMYhED7h5mtkRketpS5zA="},{"Name":"label","Value":"_content/blazor-azure-sql-vector-search/blazor-azure-sql-vector-search.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6007"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Ke0GbSRdKkdBVtnfCHSTAmTMYhED7h5mtkRketpS5zA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Apr 2025 23:37:15 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6007"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Ke0GbSRdKkdBVtnfCHSTAmTMYhED7h5mtkRketpS5zA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 20:34:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/blazor-azure-sql-vector-search/favicon.ifv42okdf2.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</AssetFile>

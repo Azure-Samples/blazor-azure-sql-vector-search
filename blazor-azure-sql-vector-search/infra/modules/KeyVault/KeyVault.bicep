@@ -8,7 +8,7 @@ param keyVaultSku object = {
 }
 
 @description('Specifies the Azure location where the resources should be created.')
-param location string = resourceGroup().location
+param location string
 
 param gptDeploymentName string
 param gptModelName string
