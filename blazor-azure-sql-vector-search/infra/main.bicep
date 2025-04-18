@@ -1,4 +1,4 @@
-param location string = resourceGroup().location
+param location string
 param appName string = 'app-${uniqueString(resourceGroup().id)}'
 param appServicePlanName string = 'ASP-${appName}'
 param appServicePlanSku string = 'P1V2'
@@ -59,9 +59,6 @@ module AzureOpenAI 'modules/AzureOpenAI/AzureOpenAI.bicep' = {
 
 module KeyVault 'modules/KeyVault/KeyVault.bicep' = {
   name: 'keyVaultDeploy'
-  dependsOn: [
-    AzureOpenAI
-  ]
   params: {
     keyVaultName: keyVaultName
     location: location
@@ -76,9 +73,9 @@ module KeyVaultRefs 'modules/AppService/EnvironmentVars.bicep' = {
   name: 'keyVaultRefsDeployment'
   dependsOn: [
     app
-    KeyVault
   ]
   params: {
+    location: location
     appName: appName
     keyVaultName: KeyVault.outputs.keyVaultName
     openAIResourceEndpoint: AzureOpenAI.outputs.openAIResourceEndpoint

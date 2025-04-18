@@ -1,4 +1,4 @@
-param location string = resourceGroup().location
+param location string
 param appName string
 param appServicePlanId string
 param linuxFxVersion string = 'DOTNETCORE|9.0'
